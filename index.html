@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Ngwenya Nompilo - home page">
+    <meta name="author" content="Nompilo Ngwenya">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/base.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="profile">
+            <img src="images/me.webp" alt="My profile picture">
+            <span><h1>Nompilo Ngwenya</h1></span>
+        </div>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Chamber</a></li>
+                <li><a href="contact.html">Final</a></li>
+                <li><a href="https://www.linkedin.com/in/nompilo-ngwenya-1a244b79">LinkedIn</a></li>
+                <li><a href="https://github.com/Nompilon">Github Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container1">
+           
+            <article class="shadowbox card">
+                <h2>Course Work</h2>
+                <div>
+                <ul>
+                    <li><a href="https://dev.to/">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+                    <li><a href="https://www.udemy.com/">Udemy</a></li>
+                    <li><a href="https://placehold.co/">Image Placeholder</a></li>
+                </ul>
+                </div>
+            </article>       
+        </section>
+        <section class="container2">
+            <article class="card">
+                <h2>Web Dev Resources</h2>
+                <div class="city">
+                    <img src="images/pretoria.webp" alt="">
+                    <p>Jacaranda Trees</p>
+                </div>
+            </article>
+        </section>
+        <section class="container3">
+            <article class="card2">
+                <h2>Web and Computer programming Certificate</h2>
+                <article class="mainfolder ">
+                    <div>
+                        <button data-page="https://byupw.instructure.com/courses/3808/modules" onclick="goToPage(this)">All</button>
+                    </div>
+                    <div>
+                        <button data-page="https://byupw.instructure.com/courses/3808/modules" onclick="goToPage(this)">CSE</button>
+                    </div>
+                    <div>
+                        <button data-page="https://byupw.instructure.com/courses/3808/modules" onclick="goToPage(this)">WDD</button>
+                    </div>
+                </article>
+                <article class=" subfolder ">
+                    <div>
+                        <button data-page="https://byupw.instructure.com/courses/3808/modules" onclick="goToPage(this)">CSE 110</button>
+                    </div>
+                    <div>
+                        <button data-page="https://byupw.instructure.com/courses/3808/modules" onclick="goToPage(this)">WDD 130</button>
+                    </div>
+                    <div>
+                        <button data-page="https://byupw.instructure.com/courses/3808/modules" onclick="goToPage(this)">CSE 111</button>
+                    </div>
+                    <div>
+                        <button data-page="https://byupw.instructure.com/courses/3808/modules" onclick="goToPage(this)">CSE 210</button>
+                    </div>
+                    <div>
+                        <button data-page="https://byupw.instructure.com/courses/3808/modules" onclick="goToPage(this)">WDD 131</button>
+                    </div>
+                    <div>
+                        <button data-page="https://byupw.instructure.com/courses/3808/modules" onclick="goToPage(this)">WDD 231</button>
+                    </div>
+                    </article>  
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p>&copy;<span id="currentyear"></span> &#10070; Nompilo Ngwenya &#10070; South Africa <img src="images/flag.webp" alt=""></p>
+            <p>Last modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>    
+</body>
+</html>

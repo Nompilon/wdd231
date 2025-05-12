@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Ngwenya Nompilo - home page">
+    <meta name="description" content="WDD 231 - Course Home Page - Ngwenya Nompilo">
     <meta name="author" content="Nompilo Ngwenya">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Wesite | About Us page</title>
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/base.css">
-    
+    <link rel="stylesheet" href="styles/large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
@@ -23,30 +22,30 @@
             <img src="images/me.webp" alt="My profile picture">
             <span><h1>Nompilo Ngwenya</h1></span>
         </div>
-        <a id="menu" href="#"></a>
+        <a href="#" id="menu" aria-label="menu to access the nav ins phones" class="small-screen"></a>
         <nav>
             <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Chamber</a></li>
-                <li><a href="contact.html">Final</a></li>
-                <li><a href="https://www.linkedin.com/in/nompilo-ngwenya-1a244b79">LinkedIn</a></li>
-                <li><a href="https://github.com/Nompilon">Github Profile</a></li>
+                <li><a href="index.html"title="Home" class="active" >Home</a></li>
+                <li><a href="#" title="Chamber">Chamber</a></li>
+                <li><a href="#" title="Final">Final</a></li>
+                <li><a href="https://www.linkedin.com/in/nompilo-ngwenya-msc-1a244b79/"title="LinkedIn">LinkedIn</a></li>
+                <li><a href="https://github.com/Nompilon" title="Github Profile">Github Profile</a></li>
             </ul>
         </nav>
+        <p>Home</p>
     </header>
     <main>
-        <section class="container1">
-           
+        <section class="container1">           
             <article class="shadowbox card">
                 <h2>Course Work</h2>
                 <div>
                 <ul>
-                    <li><a href="https://dev.to/">Dev.to Community</a></li>
-                    <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
-                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
-                    <li><a href="https://www.w3schools.com/">W3Schools</a></li>
-                    <li><a href="https://www.udemy.com/">Udemy</a></li>
-                    <li><a href="https://placehold.co/">Image Placeholder</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
                 </ul>
                 </div>
             </article>       
@@ -55,51 +54,54 @@
             <article class="card">
                 <h2>Web Dev Resources</h2>
                 <div class="city">
-                    <img src="images/pretoria.webp" alt="">
+                    <img src="images/pretoria.webp" alt="The famous Jakaranda found in Pretoria South Africa">
                     <p>Jacaranda Trees</p>
                 </div>
             </article>
         </section>
         <section class="container3">
+            
             <article class="card2">
                 <h2>Web and Computer programming Certificate</h2>
+                <p id="total-credits-display" ></p>
                 <article class="mainfolder ">
                     <div>
-                        <button data-page="https://byupw.instructure.com/courses/3808/modules" onclick="goToPage(this)">All</button>
+                        <button id="all-btn">All</button>
                     </div>
                     <div>
-                        <button data-page="https://byupw.instructure.com/courses/3808/modules" onclick="goToPage(this)">CSE</button>
+                        <button id="cse-btn">CSE</button>
                     </div>
                     <div>
-                        <button data-page="https://byupw.instructure.com/courses/3808/modules" onclick="goToPage(this)">WDD</button>
+                        <button id="wdd-btn">WDD</button>
                     </div>
                 </article>
-                <article class=" subfolder ">
+                <article class="subfolder" id="course-buttons-container">
                     <div>
-                        <button data-page="https://byupw.instructure.com/courses/3808/modules" onclick="goToPage(this)">CSE 110</button>
+                        <button data-subject="CSE" data-number="110">CSE 110</button>
                     </div>
                     <div>
-                        <button data-page="https://byupw.instructure.com/courses/3808/modules" onclick="goToPage(this)">WDD 130</button>
+                        <button data-subject="WDD" data-number="130">WWD 130</button>
                     </div>
                     <div>
-                        <button data-page="https://byupw.instructure.com/courses/3808/modules" onclick="goToPage(this)">CSE 111</button>
+                        <button data-subject="CSE" data-number="111">CSE 111</button>
                     </div>
                     <div>
-                        <button data-page="https://byupw.instructure.com/courses/3808/modules" onclick="goToPage(this)">CSE 210</button>
+                        <button data-subject="CSE" data-number="210">CSE 210</button>
                     </div>
                     <div>
-                        <button data-page="https://byupw.instructure.com/courses/3808/modules" onclick="goToPage(this)">WDD 131</button>
+                        <button data-subject="WDD" data-number="131">WDD 131</button>
                     </div>
                     <div>
-                        <button data-page="https://byupw.instructure.com/courses/3808/modules" onclick="goToPage(this)">WDD 231</button>
+                        <button data-subject="WDD" data-number="231">WDD 231</button>
                     </div>
                     </article>  
+                    <div id="completed-courses" class="course-list"></div>
             </article>
         </section>
     </main>
     <footer>
         <div>
-            <p>&copy;<span id="currentyear"></span> &#10070; Nompilo Ngwenya &#10070; South Africa <img src="images/flag.webp" alt=""></p>
+            <p>&copy;<span id="currentyear"></span> &#10070; Nompilo Ngwenya &#10070; South Africa <img src="images/flag.webp" alt="The flag of South Africa"></p>
             <p>Last modification: <span id="lastModified"></span></p>
         </div>
     </footer>    

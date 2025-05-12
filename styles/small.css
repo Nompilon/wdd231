@@ -1,29 +1,237 @@
-
-
-@media (min-width: 40em) {
-    #menu {
-        display: none;
-    }
-
-    .navigation {
-        display: flex;
-        flex-wrap: wrap;
-        list-style: none;
-        justify-content: space-around;
-        align-items: center;
-        background-color: var(--text);
-        margin: 0;
-        padding: 2rem;
-    }
-
-    .navigation li {
-        text-align: center;
-    }
+:root {
+    --text: rgb(19, 2, 2);
+    --text2: #ffffff;
+    --heading-background-color: rgba(0, 13, 17, 0.685);
+    --boarder-color: rgb(202, 233, 194);
 }
 
-/*.navigation a {
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.profile {
+    display: flex;
+    background-color: var(--heading-background-color);
+    width: 100%;
+    height: 10rem;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.profile img {
+    width: 140px;
+    height: auto;
+}
+
+h1 {
     color: var(--text2);
+    text-align: center;
+}
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
     text-decoration: none;
-    font-size: large;
+    padding: 0.5rem 0.75rem;
+    background-color: var(--text);
+    color: var(--text2);
+    /*position: absolute;*/
+}
+
+#menu::before {
+    content: "≡";
+}
+
+nav {
+    background-color: var(--text);
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width:1480px;  
+    color: var(--text2);
+    
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text2);
+    transition: 0.5s;
+    font-size: 1.5rem;
+}
+
+.navigation a:hover,
+button:hover {
+    color: tomato;
+    cursor: pointer;
+}
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+.open a {
+    display: block;
+}
+
+.active::before {
+    content: "📍";
+    /* just a wayfinding symbol for the user */
+}
+
+
+header p{
+    font-size: 2rem;
+    color:var(--heading-background-color);
+    font-weight: 200;
+    margin: 1rem;
+}
+body {
+    display: block;
+    position: relative;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 5px;
+    width: 100%;
+    color: var(--text);
+    min-height: 100vh;
+}
+
+.container2 {
+    margin: 0.2rem;
+}
+
+.card {
+
+    border: solid var(--boarder-color);
+    border-width: 0.2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    height: 30rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+}
+
+.card2 {
+    border: solid var(--boarder-color);
+    border-width: 0.2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+}
+
+h2 {
+    background-color: var(--heading-background-color);
+    height: 3rem;
+    margin: 0;
+    color: var(--text2);
+    padding: 0.6rem 0 0 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 0.9rem;
+}
+
+.city img {
+    width: 400px;
+    height: auto;
+    margin: 4rem 4rem 0 4rem;
+}
+
+.city p {
+    text-align: center;
+    font-style: italic;
+}
+
+.container3 {
+    grid-column: 1/3;
+    font-weight: 700;
+}
+
+.mainfolder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    align-self: center;
+    padding: 0.25rem 15rem;
+    border-bottom: solid var(--boarder-color);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2)
+}
+
+.mainfolder button {
+    width: 9rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--heading-background-color);
+    color: var(--text2);
+    margin: 0.5rem;
+}
+
+.subfolder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+
+}
+
+.subfolder button {
+    flex: 1 1 100%;
+    width: 20rem;
+    height: 4rem;
+    margin: 1rem;
+    border-radius: 0.8rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+    background-color: var(--boarder-color);
+    color: var(--text);
+    margin: 1rem;
+}
+button.completed {
+    background-color: #41bb78;
+    /* Green */
+    color: var(--text);
+    font-weight: bold;
+    border: 2px solid #171a17;
+}
+.container3 p{
+    font-weight: bold;
+    text-align: end;
+    color: #1a5839;
+    margin: 1rem;
+    font-style: italic;
+}
+
+footer img {
+    width: 50px;
+    height: auto;
+    margin: 1rem 0 0 0;
+    align-items: center;
+    
+}
+
+footer {
+    position: absolute;
+    background-color: var(--heading-background-color);
+    height: 9rem;
     padding: 0;
-}*/
+    width: 100%;
+    color: var(--text2);
+    text-align: center;
+}

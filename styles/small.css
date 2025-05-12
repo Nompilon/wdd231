@@ -17,6 +17,9 @@
     align-items: center;
     gap: 10px;
     justify-content: center;
+    color: var(--text2);
+    text-align: center;
+    font-size: 3rem;
 }
 
 .profile img {
@@ -25,8 +28,8 @@
 }
 
 h1 {
-    color: var(--text2);
-    text-align: center;
+    font-weight: 200;
+    margin: 0.5rem 0 0 0;
 }
 #menu {
     display: block;

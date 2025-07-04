@@ -1,0 +1,72 @@
+
+@media only screen and (min-width: 40em) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        /* change state in small view */
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+       
+    }
+
+    #menu {
+        display: none;
+    }
+    .student-card img{
+        width: 400px;
+        height: auto;
+    }
+    .mainfolder, .subfolder {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-content: end;
+    
+    }   
+
+    .containerb{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #maincontainers {
+        display: grid;
+        grid-template-columns: 1fr 1fr;   
+    }
+  
+    .mainfolder button, .subfolder button{
+    width: 20rem;
+    height: 4rem;
+    gap: 2rem;
+    margin: 1rem;
+    margin-left: 3rem;
+    border-radius: 0.8rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+
+    }    
+    
+    .mainfolder button{
+        background-color:var(--heading-background-color);
+        color: var(--text2);
+    }
+    .subfolder button{
+        
+        background-color: var(--boarder-color);
+        color: var(--text);  
+    }
+    button.completed {
+        background-color: #8368cc;
+        color: var(--text);
+        font-weight: bold;
+        border: 2px solid #171a17;
+    }
+}

@@ -3,10 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="WDD 231 - Course Home Page - Ngwenya Nompilo">
+    <meta name="author" content="Nompilo Ngwenya">
+    <title>Wesite | About Us page</title>
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 <body>
-    <h1>Nompilo Ngwenya WDD231</h1>
-    
+    <div class="container">
+        <header>
+            <div class="header">
+            
+                <div class="profile">
+                    <img src="images/logo1.svg" alt="website logo">
+                    <span>One mind</span>
+                </div>
+                <a href="#" id="menu" aria-label="menu to access the nav ins phones" class="small-screen"></a>
+                <div>
+                    
+                    <nav>
+                        <ul class="navigation">
+                            <li><a href="index.html" title="Home" class="active" >Home</a></li>
+                            <li><a href="#" title="Chamber">Chamber Project</a></li>
+                            <li><a href="#" title="Final">Final Project</a></li>
+                            <li><a href="https://github.com/Nompilon" title="Github Profile">Github Profile</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        <h1>Home</h1>
+        </header>
+        <main>
+            <section class="containerb">
+                <div id="maincontainers">
+                    <article class="shadowbox-card card">
+                        <h2>About Me</h2>
+                        <div class="one">
+                            <p>My name is Nompilo Ngwenya. I reside in South Africa, in the city of Pretoria. I’m an aspiring software developer
+                            with a strong interest in full-stack development and a growing skill set in Python,
+                            C#, JavaScript, HTML, CSS, Object-oriented Programming, SQL, Git, and GitHub. I enjoy solving problems,
+                            learning new technologies, and working in collaborative environments. I'm actively seeking opportunities to
+                            apply and expand my skills in real-world development teams.</p>
+                        </div>
+                    </article>       
+                    <article class="student-card card">
+                        <h2>Student Photo</h2>
+                        <div class="one">
+                            <img src="images/me.webp" alt="My picture">
+                        </div>
+                    </article>
+                    
+                </div>
+                <div class="container3">
+            
+                    <article class="heading">
+                        <h2>Web Certificate Courses</h2>
+                    
+                        <article class="mainfolder ">
+                            <div>
+                                <button id="all-btn">All</button>
+                            </div>
+                            <div>
+                                <button id="cse-btn">CSE</button>
+                            </div>
+                            <div>
+                                <button id="wdd-btn">WDD</button>
+                            </div>
+                        </article>
+                        <article class="subfolder" id="course-buttons-container">
+                            <div>
+                                <button data-subject="CSE" data-number="110">CSE 110</button>
+                            </div>
+                            <div>
+                                <button data-subject="WDD" data-number="130">WWD 130</button>
+                            </div>
+                            <div>
+                                <button data-subject="CSE" data-number="111">CSE 111</button>
+                            </div>
+                            <div>
+                                <button data-subject="CSE" data-number="210">CSE 210</button>
+                            </div>
+                            <div>
+                                <button data-subject="WDD" data-number="131">WDD 131</button>
+                            </div>
+                            <div>
+                                <button data-subject="WDD" data-number="231">WDD 231</button>
+                            </div>
+                            </article>  
+                            <div id="completed-courses" class="course-list"></div>
+                     </article>
+                    <article class="container4">
+                        <p id="total-credits-display"></p>
+                        <nav class="sociallinks">
+                            <a href="https://linkedin.com">
+                                <img src="images/linkedin.svg" alt="Facebook">
+                            </a>
+                            <a href="https://twitter.com">
+                                <img src="images/twitter.svg" alt="Twitter">
+                            </a>
+                            <a href="https://github.com">
+                                <img src="images/github.svg" alt="Instagram">
+                            </a>          </nav>
+                    </article>
+                </div>
+            </section> 
+        </main>
+        <footer>
+            <div>
+                <p>&copy;<span id="currentyear"></span> &#10070; Nompilo Ngwenya &#10070; Pretoria, South Africa </p>
+                <p>Last modification: <span id="lastModified"></span></p>
+            </div>
+        </footer>
+        </div>    
 </body>
 </html>

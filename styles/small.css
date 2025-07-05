@@ -113,11 +113,6 @@ button:hover {
     display: block;
 }
 
-.active::before {
-    content: "📍";
-    /* just a wayfinding symbol for the user */
-}
-
 
 .one p{
     font-size: 1rem;

@@ -3,57 +3,81 @@
     h1 {
         font-size: 2.5rem;
     }
+    .header {
+        grid-area: header;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        background-color: var(--heading-background-color);
 
+    }
     .navigation {
         display: flex;
+        gap: 2rem;
+        justify-content: space-around;   
     }
 
+    .profile{
+        
+        font-size: 2rem;
+        
+    }
     .navigation li {
-        display: block;
-        /* change state in small view */
-        flex: 1 1 100%;
+        display: inline-block;
+       
     }
 
     .navigation a {
         text-align: center;
-       
     }
-
+   
     #menu {
         display: none;
     }
     .student-card img{
         width: 400px;
         height: auto;
+        margin: 1rem;
     }
+
     .mainfolder, .subfolder {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        align-content: end;
-    
+        align-content: center;
     }   
 
-    .containerb{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
     #maincontainers {
         display: grid;
-        grid-template-columns: 1fr 1fr;   
-    }
-  
-    .mainfolder button, .subfolder button{
-    width: 20rem;
-    height: 4rem;
-    gap: 2rem;
-    margin: 1rem;
-    margin-left: 3rem;
-    border-radius: 0.8rem;
-    font-weight: 600;
-    font-size: 1.3rem;
+        grid-template-columns: 2fr 1fr;
+        padding:0; 
+        gap: 1rem;
 
-    }    
+    }
     
+    .mainfolder button, .subfolder button{
+        width: 20rem;
+        height: 4rem;
+        /*gap: 2rem;*/
+        margin: 2rem 0;
+        border-radius: 0.8rem;
+        font-weight: 600;
+        font-size: 1.3rem;
+
+    }
+    
+    .containerb{
+        margin: 0;
+        padding: 0;
+    }
+    main {
+        grid-area: main;
+        display: block;
+        width: 100%;
+        background: white;
+        margin: 0;   
+        padding: 0;
+    }
+
     .mainfolder button{
         background-color:var(--heading-background-color);
         color: var(--text2);
@@ -68,5 +92,19 @@
         color: var(--text);
         font-weight: bold;
         border: 2px solid #171a17;
+    }
+
+    #total-credits-display{
+        text-align: center;
+    }
+    .container4 nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-content:center;
+    }
+    
+    .container4 img {
+        width: 90px;
+        margin: 0 1rem;   
     }
 }

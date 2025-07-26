@@ -193,7 +193,7 @@ h2 {
 footer {
     grid-area: footer;
     background-color: var(--heading-background-color1);
-    height: 100%rem;
+    height: 100%;
     margin:0;
     width: 100%;
     color: var(--text1);

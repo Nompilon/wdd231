@@ -1,0 +1,40 @@
+{
+    "members":[
+        {
+            "memberName": "Begginers Bakery",
+            "address": "123 Bread St, Pretoria, South Africa",
+            "phone": "+27 12 345 6789",
+            "websiteUrl": "https://begginers.co.za",
+            "imageUrl": "images/company2.webp",
+            "membershipLevel": 3,
+            "description": "Family-owned bakery known for artisan breads and cakes."
+        },
+        {
+            "memberName": "Wellness Hub",
+            "address": "17 Healthy Way, Menlyn, South Africa",
+            "phone": "+27 63 987 6543",
+            "websiteUrl": "https://wellnesshub.co.za",
+            "imageUrl": "images/company4.webp",
+            "membershipLevel": 2,
+            "description": "Health and wellness center offering yoga, therapy, and nutrition coaching."
+        },
+        {
+            "memberName": "Bespoke Furniture Co.",
+            "address": "200 Woodlane Dr, Pretoria, South Africa",
+            "phone": "+27 78 234 5678",
+            "websiteUrl": "https://bespokefurniture.co.za",
+            "imageUrl": "images/company3.webp",
+            "membershipLevel": 3,
+            "description": "Crafting custom furniture from locally-sourced wood."
+        },
+        {
+            "memberName": "TechVision SA",
+            "address": "45 Silicon Ave, Centurion, South Africa",
+            "phone": "+27 11 555 1212",
+            "websiteUrl": "https://techvisionsa.co.za",
+            "imageUrl": "images/company1.webp",
+            "membershipLevel": 2,
+            "description": "IT consulting firm offering cybersecurity and cloud solutions."
+        }
+    ]   
+}

@@ -1,0 +1,39 @@
+{
+    "familyName": "Ngwenya",
+    "moveInDate": "2025/06/27",
+    "visitedByBishopric": false,
+    "numberOfMembers": 6,
+    "members": [
+        {
+            "name": "Jefrey Ngwenya",
+            "gender": "Male",
+            "birthdate": "1967/05/14"
+        },
+        {
+            "name": "Sihle Ngwenya",
+            "gender": "Female",
+            "birthdate": "1971/05/18"
+        },
+        {
+            "name": "Nompilo Ngwenya",
+            "gender": "Female",
+            "birthdate": "1991/04/29"
+        },
+        {
+            "name": "Ruth Ngwenya",
+            "gender": "Female",
+            "birthdate": "1994/06/10"
+        },
+        {
+            "name": "Mthabisi Ngwenya",
+            "gender": "Male",
+            "birthdate": "2001/10/30"
+        },
+        {
+            "name": "Okuhle Luyanda Ngwenya",
+            "gender": "Male",
+            "birthdate": "2016/05/04"
+        }
+
+    ]
+}

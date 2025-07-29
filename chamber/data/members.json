@@ -15,7 +15,7 @@
             "phone": "+27 63 987 6543",
             "websiteUrl": "https://wellnesshub.co.za",
             "imageUrl": "images/company4.webp",
-            "membershipLevel": 2,
+            "membershipLevel": 4,
             "description": "Health and wellness center offering yoga, therapy, and nutrition coaching."
         },
         {
@@ -28,13 +28,41 @@
             "description": "Crafting custom furniture from locally-sourced wood."
         },
         {
-            "memberName": "TechVision SA",
+            "memberName": "CyberCom SA",
+            "address": "45 Pretorius Ave, Montana, South Africa",
+            "phone": "+27 12 525 1312",
+            "websiteUrl": "https://cybercomsa.co.za",
+            "imageUrl": "images/company5.webp",
+            "membershipLevel": 1,
+            "description": "IT consulting firm offering cybersecurity and cloud solutions."
+        },
+        {
+            "memberName": "MediCell",
             "address": "45 Silicon Ave, Centurion, South Africa",
-            "phone": "+27 11 555 1212",
+            "phone": "+27 12 123 1214",
+            "websiteUrl": "https://medicell.co.za",
+            "imageUrl": "images/company6.webp",
+            "membershipLevel": 2,
+            "description": "Medicine and drug shop."
+        },
+        {
+            "memberName": "Logitec SA",
+            "address": "12 Jubet street, Centurion, South Africa",
+            "phone": "+27 11 000 1212",
             "websiteUrl": "https://techvisionsa.co.za",
             "imageUrl": "images/company1.webp",
             "membershipLevel": 2,
-            "description": "IT consulting firm offering cybersecurity and cloud solutions."
+            "description": "Logistics and transport company."
+        },
+        {
+            "memberName": "NaturePill SA",
+            "address": "13 Robert Sobukwe, Durban, South Africa",
+            "phone": "+27 11 555 1212",
+            "websiteUrl": "https://techvisionsa.co.za",
+            "imageUrl": "images/company7.webp",
+            "membershipLevel": 1,
+            "description": "Natural and traditional medicine clinic."
         }
+
     ]   
 }

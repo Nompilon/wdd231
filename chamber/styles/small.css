@@ -7,6 +7,19 @@
     
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
 body {
     font-family: "Poppins", Arial ,sans-serif;
 }
@@ -74,6 +87,10 @@ h1 {
 
 }
 
+.active::before {
+    content: "📍";
+    /* just a wayfinding symbol for the user */
+}
 nav a {
     list-style: none;
     margin: 0 auto;
@@ -134,62 +151,85 @@ h2 {
     text-align: center;
 }
 
-/*#members-cards {
+#members-cards {
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
     text-align: center;
     font-size: 1rem;
 
-}*/
-
-#members-cards img {
-
-    width: 500px;
-    height: 350px;
-    margin: 0.5rem;
-
 }
+
 .grid-view {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
+   
 }
+  .list-view {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
 
-/* Member card styling */
-.member-card {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
+  }
+ .list-view .info-row {
+     display: flex;
+     flex: 1;
 
+
+ }
+  .list-view .members-cards {
+
+      background-color: #f9f9f9;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      text-align: start;
+      padding: 1rem;
+
+  }
 /* List view overrides the grid layout */
-.list-view {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.list-view .member-image {
+    display: none;
 }
 
-.list-view .member-card {
-    display: flex;
-    flex-direction: column;
+.grid-view .members-cards {
+    margin: 1rem;
+    padding: 2rem;
+
+}
+.grid-view .info-name{
+    font-weight: 900;
+    font-size: x-large;
+}
+.list-view .info-name {
+    font-weight: 900;
+    font-size: smaller;
+}
+.grid-view section>div {
+    min-height: 60px;
+    font-size: small;
+    text-align: center;
+}
+ .list-view .members-cards:nth-child(odd) {
+     background-color: #e5e9e9;
+
+ }
+.list-view .members-cards:nth-child(even) {
+     background-color: white;
+ }
+
+ .info-row>div {
+     flex: 1 1 200px;
+
+ }
+
+.list-view section>div {
+    min-height: 60px;
+    font-size: 9px;
+    text-align: start;
 }
 
-/* Optional: you could make it horizontal for list view */
-@media (min-width: 600px) {
-    .list-view .member-card {
-        flex-direction: row;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .list-view .member-card img {
-        width: 100px;
-        height: auto;
-    }
-}
 footer {
     grid-area: footer;
     background-color: var(--heading-background-color1);

@@ -3,25 +3,20 @@ const cardsContainer = document.getElementById("members-cards");
 const gridBtn = document.getElementById("gridViewBtn");
 const listBtn = document.getElementById("listViewBtn");
 
-let membersData = []; // store globally once fetched
-
 async function getMembers() {
     const response = await fetch(membersUrl);
     const data = await response.json();
-    membersData = data.members; // Store for reuse
-    displayMembers("grid"); // Default view
+
+    console.table(data.members);
+    displayMembers(data.members);
 }
 
-function displayMembers(viewType) {
+function displayMembers(members) {
     cardsContainer.innerHTML = ""; // Clear previous content
 
-    // Toggle classes on container
-    cardsContainer.classList.toggle("grid-view", viewType === "grid");
-    cardsContainer.classList.toggle("list-view", viewType === "list");
-
-    membersData.forEach(member => {
+    members.forEach(member => {
         const card = document.createElement("section");
-        card.classList.add("members-cards");
+        card.classList.add("member-card");
 
         const fullName = document.createElement("h2");
         fullName.textContent = member.memberName;
@@ -56,34 +51,43 @@ function displayMembers(viewType) {
         link.textContent = member.websiteUrl;
         link.target = "_blank";
         website.appendChild(link);
-        
-        const description = document.createElement("p");
-        description.classList.add("member-description");
-        description.textContent = member.description;
 
         infoRow.appendChild(name);
         infoRow.appendChild(address);
         infoRow.appendChild(phone);
         infoRow.appendChild(website);
-        infoRow.appendChild(description);
 
-        if (viewType === "grid") {
-            card.appendChild(portrait); // Show image only in grid
+        // Conditional rendering of image (optional)
+        if (!cardsContainer.classList.contains("list-view")) {
+            card.appendChild(portrait);
         }
 
         card.appendChild(infoRow);
-        cardsContainer.appendChild(card);
+        cardsContainer.appendChild(card); // ✅ <-- Important line
     });
 }
 
-// Toggle View Buttons
+function getMembershipLabel(level) {
+    switch (level) {
+        case 1: return "Member";
+        case 2: return "Silver";
+        case 3: return "Gold";
+        default: return "Unknown";
+    }
+}
+
+// Toggle View
 gridBtn.addEventListener("click", () => {
-    displayMembers("grid");
+    cardsContainer.classList.add("grid-view");
+    cardsContainer.classList.remove("list-view");
+    getMembers(); // Refresh to apply view
 });
 
 listBtn.addEventListener("click", () => {
-    displayMembers("list");
+    cardsContainer.classList.add("list-view");
+    cardsContainer.classList.remove("grid-view");
+    getMembers(); // Refresh to apply view
 });
 
-// Load once
+// Start on load
 getMembers();

@@ -411,14 +411,15 @@ h3{
     background-color: darkorange;
     transform: scale(1.05);
 }
-
+ .form-page {
+     display: grid;
+     grid-template-columns: 1fr;
+ }
 .wf1 fieldset {
     margin: 1rem 0;
     border: 1px solid var(--heading-background-color);
     border-radius: 6px;
     padding: .5rem .5rem 0 3rem;
-    display: grid;
-    grid-template-columns: 1fr;
 }
 
 .wf1 legend {
@@ -527,4 +528,18 @@ footer {
 .star-rating label:hover,
 .star-rating label:hover~label {
     color: gold;
+}
+
+.membership-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card2 {
+    border: 1px solid var(--heading-background-color);
+    border-radius: 6px;
+    padding: 1rem;
+    background-color: #f9f9f9;
 }

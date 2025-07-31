@@ -181,9 +181,8 @@
     font-size: 1.5rem;
   }
 
-  .wifi{
+ .form-page{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
-  }
+    grid-template-columns: 1fr 1fr;
+ }
 }

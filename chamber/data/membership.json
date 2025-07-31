@@ -1,0 +1,24 @@
+{
+    "memberships": [
+        {
+            "level": "Bronze Membership",
+            "description": "Basic access with limited features.",
+            "price": "R100 / month"
+        },
+        {
+            "level": "Silver Membership",
+            "description": "Standard access with additional perks.",
+            "price": "R200 / month"
+        },
+        {
+            "level": "Gold Membership",
+            "description": "Premium access with priority support.",
+            "price": "R300 / month"
+        },
+        {
+            "level": "Platinum Membership",
+            "description": "All-inclusive access and exclusive benefits.",
+            "price": "R500 / month"
+        }
+    ]
+}

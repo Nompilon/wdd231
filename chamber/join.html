@@ -20,6 +20,7 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/members.js" defer></script>
+    <script src="scripts/membership.js" defer></script>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
@@ -45,35 +46,35 @@
         </header>
 
         <main>
-           <article>
+           <article class="container-form">
             <h1>Join the Tshwane Chamber of Commerce</h1>
             <section class="form-page">
                 <form method="get" action="thanks.html" class="wf1">
-                    <fieldset class="personal-information card2">
-                        <legend>Personal information</legend>
+                    <fieldset>
+                        <legend>Personal Information</legend>
                         <label>First Name* <input type="text" name="fname" required></label>
                         <label>Last Name* <input type="text" name="lname" required></label>
                         <label>Phone <input type="tel" name="phone" placeholder="1235551234"></label>
                         <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
                         <label>Position <input type="text" name="postion" placeholder="CEO" required></label>
                     </fieldset>
-                    <fieldset class="business-information card2">
+                    <fieldset>
                         <legend> Business Information</legend>
                         <label>Business Name* <input type="text" name="fname" required></label>
                         <label>Company Phone <input type="tel" name="phone" placeholder="1235551234"></label>
-                        <label> Company Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                        <label> Company Email* <input type="email" name="email" placeholder="someone@companyname.co.za" required></label>
                         <label>Position <input type="text" name="postion" placeholder="CEO" required></label>
                         <label> Industry
                             <select name="subject">
                                 <option value="">Please Select &#9662;</option>
-                                <option value="software">Softwarer Development</option>
-                                <option value="creative">Creative Professional</option>
-                                <option value="info">Information Technology</option>
-                                <option value="data">Data Professional</option>
+                                <option value="agriculture">Agriculture</option>
+                                <option value="automotive">Automotive</option>
+                                <option value="banking">Banking & Finance</option>
                                 <option value="construction">Construction</option>
                                 <option value="manufacturing">Manufacturing</option>
-                                <option value="business">Business Professional</option>
-                                <option value="security">Cyber Security</option>
+                                <option value="mining">Mining & Resources</option>
+                                <option value="Nonprofit">Nonprofit / NGO</option>
+                                <option value="Other">Other</option>
                             </select>
                         </label>
                         <label>Company rating</label>
@@ -90,13 +91,9 @@
                         <label><input type="radio" name="audio" value="intermediate"> Gold Membership</label>
                         <label><input type="radio" name="audio" value="intermediate"> Platinum Membership</label>
                     </fieldset>                     
-                    <input type="submit" value="Join Now">
-
-                    <fieldset class="membership-information card2">
-                        <legend>Membership information and application fee</legend>
-                    </fieldset>
-                
+                    <input type="submit" value="Join Now">                
                 </form>
+                <div id="membership-information"></div>
             </section>
            </article>
         </main>

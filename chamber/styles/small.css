@@ -138,7 +138,10 @@ button:hover {
     margin: 0 .8rem;
 
 }
-
+.hero,
+.banner {
+    position: relative;
+}
 .banner {
     width: 100%;
     height: auto;
@@ -391,15 +394,15 @@ h3{
 
 .cta-link {
     position: absolute;
-    bottom: -20%;
-    left: 80%;
+    bottom: 10%;
+    left: 75%;
     background-color: var(--text);
     color: var(--text2);
     padding: 0.75rem 1.5rem;
     border-radius: 25px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: .9rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, transform 0.3s ease;
 }

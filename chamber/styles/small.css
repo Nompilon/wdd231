@@ -543,3 +543,25 @@ footer {
     padding: 1rem;
     background-color: #f9f9f9;
 }
+
+.card2 {
+    border: 1px solid var(--heading-background-color);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card2 h3 {
+    color: #445ba9;
+    margin-top: 0;
+}
+
+.card2 p {
+    margin: 0.5rem 0;
+}
+
+.card2 input[type="radio"] {
+    margin-right: 0.5rem;
+}

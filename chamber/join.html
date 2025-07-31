@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD231-Web Fronted Development-Ngwenya Nompilo - Chamber of Commerce project">
+    <meta name="author" content="Nompilo Ngwenya">
+    <title>Tshwane Chamber of Commerce | Join Us Page</title>
+    <meta property="og:title" content="Tshwane Chamber of Commerce - Join us page">
+    <meta property="og:description" content="Diretory for the Tshwane Chamber of Commerce Project - Nompilo Ngwenya">
+    <meta property="og:url" content="https://nompilon.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://nompilon.github.io/wdd231/chamber/images/hero-medium.webp.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <div><span>Tshwane Chamber of Commerce</span></div>
+            </div>
+
+            <div>
+                <button href="#" id="menu" aria-label="menu to access the nav ins phones" class="small-screen"></button>
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="index.html" id="home" title="Home">Home</a></li>
+                        <li><a href="#" id="discover" title="discover">Discover</a></li>
+                        <li><a href="directory.html" id="directory" title="directory">Directory</a></li>
+                        <li><a href="join.html" id="join" title="join" class="active">Join</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+           <article>
+            <h1>Join the Tshwane Chamber of Commerce</h1>
+            <section class="form-page">
+                <form method="get" action="thanks.html" class="wf1">
+                    <fieldset class="personal-information card2">
+                        <legend>Personal information</legend>
+                        <label>First Name* <input type="text" name="fname" required></label>
+                        <label>Last Name* <input type="text" name="lname" required></label>
+                        <label>Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+                        <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                        <label>Position <input type="text" name="postion" placeholder="CEO" required></label>
+                    </fieldset>
+                    <fieldset class="business-information card2">
+                        <legend> Business Information</legend>
+                        <label>Business Name* <input type="text" name="fname" required></label>
+                        <label>Company Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+                        <label> Company Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                        <label>Position <input type="text" name="postion" placeholder="CEO" required></label>
+                        <label> Industry
+                            <select name="subject">
+                                <option value="">Please Select &#9662;</option>
+                                <option value="software">Softwarer Development</option>
+                                <option value="creative">Creative Professional</option>
+                                <option value="info">Information Technology</option>
+                                <option value="data">Data Professional</option>
+                                <option value="construction">Construction</option>
+                                <option value="manufacturing">Manufacturing</option>
+                                <option value="business">Business Professional</option>
+                                <option value="security">Cyber Security</option>
+                            </select>
+                        </label>
+                        <label>Company rating</label>
+                        <div class="star-rating">
+                            <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+                            <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+                            <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+                            <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+                            <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+                        </div>
+                        <div>Membership Level</div>
+                        <label><input type="radio" name="audio" value="advanced"> Bronze Membership</label>
+                        <label><input type="radio" name="audio" value="beginner"> Silver Membership</label>
+                        <label><input type="radio" name="audio" value="intermediate"> Gold Membership</label>
+                        <label><input type="radio" name="audio" value="intermediate"> Platinum Membership</label>
+                    </fieldset>                     
+                    <input type="submit" value="Join Now">
+
+                    <fieldset class="membership-information card2">
+                        <legend>Membership information and application fee</legend>
+                    </fieldset>
+                
+                </form>
+            </section>
+           </article>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <article class="contact">
+                    <p class="title">Tshwane Chamber of Commerce</p>
+                    <p>257 Kandelaar Avenue</p>
+                    <p>La Montagne</p>
+                    <p>Pretoria, South Africa 0184</p>
+                    <p>tshwane@chamberofcommerce.co.za</p>
+                    <p>+27 81 578 9575</p>
+                </article>
+                <article class="sociallinks">
+                    <nav>
+                        <a href="https://youtube.com">
+                            <img src="images/youtube.svg" alt="YouTube">
+                        </a>
+                        <a href="https://twitter.com">
+                            <img src="images/twitter.svg" alt="Twitter">
+                        </a>
+                        <a href="https://linkedin.com">
+                            <img src="images/linkedin.svg" alt="LinkedIn">
+                        </a>
+                    </nav>
+                </article>
+                <article class="copyright">
+                    <p>WDD231 class Project</p>
+                    <p>Nompilo Ngwenya</p>
+                    <p>&copy;<span id="currentyear"></span> Tshwane Chamber of Commerce </p>
+                    <p>Last modification: <span id="lastModified"></span></p>
+
+                </article>
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>

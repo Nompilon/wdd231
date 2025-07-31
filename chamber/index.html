@@ -9,7 +9,7 @@
     <title>Tshwane Chamber of Commerce | Directory</title>
     <meta property="og:title" content="Tshwane Chamber of Commerce - Directory">
     <meta property="og:description" content="Diretory for the Tshwane Chamber of Commerce Project - Nompilo Ngwenya">
-    <meta property="og:url" content="https://nompilon.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://nompilon.github.io/wdd231/chamber/directory">
     <meta property="og:image" content="https://nompilon.github.io/wdd231/chamber/images/hero-medium.webp.html">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
@@ -18,7 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    <script type="module" src="scripts/members.js" defer></script>
+    <script type="module" src="scripts/weather.js" defer></script>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
@@ -27,18 +28,17 @@
         <header>
             <div class="logo">
                 <div class="logo-icon"></div>
-                <div>
-                    <h1>Tshwane Chamber of Commerce</h1>
-                </div>
+                <div><span> Tshwane Chamber of Commerce</span></div>
+                
             </div>
             <div>
-                <a href="#" id="menu" aria-label="menu to access the nav ins phones" class="small-screen"></a>
+                <button id="menu" aria-label="menu to access the nav ins phones" class="small-screen"></button>
                 <nav>
                     <ul class="navigation">
                         <li><a href="index.html" id="home" title="Home" class="active">Home</a></li>
                         <li><a href="#" id="discover" title="discover" >Discover</a></li>
                         <li><a href="directory.html" id="directory" title="directory">Directory</a></li>
-                        <li><a href="#" id="join" title="join ">Join</a></li>
+                        <li><a href="join.html" id="join" title="join ">Join</a></li>
                     </ul>
                 </nav>
             </div>
@@ -54,16 +54,53 @@
                     </picture>
                 </article>
             </article>
-            <article>
-                <div class="toggle-view">
-                    <button id="gridViewBtn">Grid View</button>
-                    <button id="listViewBtn">List View</button>
+            <h1>Home</h1>
+            <section class="home-main">
+                <div class="updates">
+                    <article class="card1">
+                        <h2>Events</h2>
+                        <p>📅 Join us for our upcoming "Business Networking Breakfast" on <strong>August 15, 2025</strong> at the Pretoria
+                            Convention Centre. See you there!</p>
+                        <p>🤝 Connect with local entrepreneurs, hear from industry experts, and grow your business network.</p>
+                        <p>👉 <a href="join.html" class="join-link">JOIN US</a></p>
+                    </article>
+                    <article class="card1">
+                        <h2>Current Weather</h2>
+                        <div class="current-weather">
+
+                            <figure>
+                                <img id="weather-icon" src="" alt="Current weather icon">
+                                <div class="row"><span id="current-temp"></span></div>
+                                <figcaption></figcaption>
+                            </figure>
+                            <div>
+                                
+                                <div class="row"><span id="sky-condition"></span></div>
+                                <div class="row"><span class="label">High</span><span class="value"><span id="high"></span></span></div>
+                                <div class="row"><span class="label">Low</span><span class="value"><span id="low"></span></span></div>
+                                <div class="row"><span class="label">Humidity</span><span class="value"><span id="humidity"></span></span></div>
+                                <div class="row"><span class="label">Sunrise</span><span class="value"><span id="sunrise"></span></span></div>
+                                <div class="row"><span class="label">Sunset</span><span class="value"><span id="sunset"></span></span></div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card1">
+                        <h2>Weather Forecast</h2>
+                        <div class="weather-forecast">
+                            <div class="row"><span class="label"><span id="dayplus0"></span></span><span class="value"><span id="day0plusTemp"></span></span></div>
+                            <div class="row"><span class="label"><span id="dayplus1"></span></span><span class="value"><span id="day1plusTemp"></span></span></div>
+                            <div class="row"><span class="label"><span id="dayplus2"></span></span><span class="value"><span id="day2plusTemp"></span></span></div>
+                        </div>
+                        
+                    </article>
                 </div>
-                <section id="members-cards" class="grid-view">
-                    <!-- Member cards will be injected here -->
-                </section>
-            </article>
+                <div class="spotlights-wrapper">
+                    <h2 class="spotlight-heading">Featured Members</h2>
+                    <div id="spotlights-cards"></div>
+                </div>
+            </section>
         </main>
+        </div>
         <footer>
             <div class="footer-container">
                 <article class="contact">

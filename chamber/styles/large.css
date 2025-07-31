@@ -155,4 +155,26 @@
   .sociallinks{
     padding: 4rem 0;
   }
+  .copyright{
+   padding: 3rem 0 0 0;
+  }
+
+  .current-weather {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 2rem;
+  }
+  #spotlights-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3rem;
+      justify-content: center;
+      margin: 1rem;
+      font-size: small;
+  }
+  .updates {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+
+  }
 }

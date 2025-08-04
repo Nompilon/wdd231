@@ -565,7 +565,13 @@ legend {
     margin-top: 1rem;
 }
 
-
+.card2 {
+    margin: 1rem auto;
+    width: 100%;
+    max-width: 1000px;
+    /* Optional limit for wide screens */
+    padding: 2rem;
+}
 .card2,
 form {
     border: 1px solid var(--heading-background-color);
@@ -639,7 +645,21 @@ form {
     transition: all 0.3s ease;
     font-weight: bold;
 }
-
+.membership-information.card2 {
+    width: 100%;
+    max-width: 1000px;
+   
+    min-width: 30em;
+   
+    margin: 1rem auto;
+    padding: 2rem;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow-wrap: break-word;
+    
+}
 .membership-choice input[type="radio"]:checked+label {
     border-color: #0077cc;
     background-color: var(--heading-background-color1);

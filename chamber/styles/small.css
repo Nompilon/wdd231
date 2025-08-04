@@ -1,10 +1,10 @@
 :root {
     --text: rgb(255, 242, 232);
-    --text1:rgb(0, 0, 0);
-    --heading-background-color:rgb(19, 66, 66);
-    --heading-background-color1:rgb(250, 205, 153);
-    --heading-background-color2:rgb(176, 202, 202);
-    
+    --text1: rgb(0, 0, 0);
+    --heading-background-color: rgb(19, 66, 66);
+    --heading-background-color1: rgb(250, 205, 153);
+    --heading-background-color2: rgb(176, 202, 202);
+
 }
 
 *,
@@ -15,16 +15,18 @@
 
 html,
 body {
-   
+
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     width: 100%;
- 
+
 }
+
 body {
-    font-family: "Poppins", Arial ,sans-serif;
+    font-family: "Poppins", Arial, sans-serif;
 }
+
 .main-container {
     min-height: 100vh;
     display: grid;
@@ -33,7 +35,7 @@ body {
         "header"
         "main"
         "footer";
-    
+
 }
 
 main {
@@ -50,11 +52,11 @@ header {
     grid-template-columns: 3fr 1fr;
     background-color: var(--heading-background-color1);
     color: var(--text1);
-    
+
 }
 
-header span{
-    font-weight:900;
+header span {
+    font-weight: 900;
     font-size: 30px;
     font-style: italic;
 }
@@ -97,6 +99,7 @@ header span{
     content: "📍";
     /* just a wayfinding symbol for the user */
 }
+
 nav a {
     list-style: none;
     margin: 0 auto;
@@ -132,16 +135,18 @@ button:hover {
 #menu.show::before {
     content: "X";
 }
- 
+
 .hero {
     width: 100%;
     margin: 0 .8rem;
 
 }
+
 .hero,
 .banner {
     position: relative;
 }
+
 .banner {
     width: 100%;
     height: auto;
@@ -155,10 +160,12 @@ button:hover {
     margin: 0;
 }
 
-article h1{
+h1 {
     margin: 1rem;
-    font-size: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
 }
+
 #members-cards {
     display: grid;
     grid-template-columns: 1fr;
@@ -172,30 +179,34 @@ article h1{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
-   
+
 }
-  .list-view {
-      display: flex;
-      flex-direction: column;
-      margin: 0;
 
-  }
- .list-view .info-row {
-     display: flex;
-     flex: 1;
+.list-view {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+}
+
+.list-view .info-row {
+    display: flex;
+    flex: 1;
 
 
- }
-  .list-view .members-cards {
+}
 
-      background-color: var(--text);
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      text-align: start;
-      padding: 1rem;
+.list-view .members-cards {
 
-  }
+    background-color: var(--text);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: start;
+    padding: 1rem;
+
+}
+
 /* List view overrides the grid layout */
 .list-view .member-image {
     display: none;
@@ -206,31 +217,36 @@ article h1{
     padding: 2rem;
 
 }
-.grid-view .info-name{
+
+.grid-view .info-name {
     font-weight: 900;
     font-size: x-large;
 }
+
 .list-view .info-name {
     font-weight: 900;
     font-size: smaller;
 }
+
 .grid-view section>div {
     min-height: 60px;
     font-size: small;
     text-align: center;
 }
- .list-view .members-cards:nth-child(odd) {
-     background-color: #e5e9e9;
 
- }
+.list-view .members-cards:nth-child(odd) {
+    background-color: #e5e9e9;
+
+}
+
 .list-view .members-cards:nth-child(even) {
-     background-color: white;
- }
+    background-color: white;
+}
 
- .info-row>div {
-     flex: 1 1 200px;
+.info-row>div {
+    flex: 1 1 200px;
 
- }
+}
 
 .list-view section>div {
     min-height: 60px;
@@ -242,20 +258,21 @@ footer {
     grid-area: footer;
     background-color: var(--heading-background-color1);
     height: 100%;
-    margin:0;
+    margin: 0;
     width: 100%;
     color: var(--text1);
     text-indent: 1rem;
     font-size: 1rem;
 }
 
-.sociallinks{
+.sociallinks {
     margin-inline-start: 3rem;
 }
-.sociallinks img{
+
+.sociallinks img {
     align-items: center;
     width: 80px;
-    height: 80px;  
+    height: 80px;
     padding: 1rem;
 }
 
@@ -264,11 +281,13 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
-  }
-.title{
+}
+
+.title {
     font-weight: bold;
 }
-footer p{
+
+footer p {
     font-size: small;
 }
 
@@ -305,29 +324,34 @@ h2 {
     font-size: 1.5rem;
     text-align: center;
 }
-.updates{
+
+.updates {
     display: grid;
     grid-template-columns: 1fr;
-    
+
 }
+
 .card1 {
 
     border: solid var(--boarder-color);
-    border-width: .2rem;    
+    border-width: .2rem;
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
     margin: 1rem;
 }
-.current-weather{
+
+.current-weather {
     display: grid;
     grid-template-columns: 1fr;
     padding: 2rem;
 
 }
-.weather-forecast{
+
+.weather-forecast {
     /*margin: 4rem;*/
     padding: 4rem 2rem 0 2rem;
 }
-#spotlights div{
+
+#spotlights div {
     margin: 2rem auto;
     padding: 1rem;
     background-color: #f9f7e8;
@@ -336,14 +360,14 @@ h2 {
     max-width: 1200px;
 }
 
- #spotlights-cards {
-     display: flex;
-     flex-wrap: wrap;
-     gap: 3rem;
-     justify-content: center;
-     margin: 1rem;
-     font-size: small;
- }
+#spotlights-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    margin: 1rem;
+    font-size: small;
+}
 
 #spotlights-cards .members-cards {
     border: 2px solid var(--heading-background-color2);
@@ -367,10 +391,11 @@ h2 {
     border-radius: 6px;
 }
 
-.spotlights-wrapper h2{
+.spotlights-wrapper h2 {
     margin: 1rem;
 }
-h3{
+
+h3 {
     font-size: 1rem;
 }
 
@@ -412,23 +437,26 @@ h3{
     background-color: darkorange;
     transform: scale(1.05);
 }
- .form-page, .card2{
-     display: grid;
-     grid-template-columns: 1fr;
- }
+
+.form-page,
+.card2 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 .wf1 fieldset {
     margin: 1rem 0;
     border: 1px solid var(--heading-background-color);
     border-radius: 6px;
     padding: .5rem .5rem 3rem 5rem;
-  
+
 }
 
-legend{
+legend {
     color: var(--text1);
-    padding: 0 .5rem; 
+    padding: 0 .5rem;
     font-style: italic;
-    
+
 
 }
 
@@ -440,7 +468,7 @@ legend{
     padding: 1rem 3rem 0 0;
     color: #9c2c13;
     font-size: .9rem;
-   
+
 }
 
 .wf1 div {
@@ -498,7 +526,7 @@ legend{
 
 .wf1 input:required:valid {
     border-bottom: solid 3px rgb(43, 158, 89);
-    
+
 }
 
 
@@ -538,7 +566,8 @@ legend{
 }
 
 
-.card2,  form{
+.card2,
+form {
     border: 1px solid var(--heading-background-color);
     border-radius: 8px;
     padding: 1rem;
@@ -561,6 +590,7 @@ legend{
 .card2 input[type="radio"] {
     margin-right: 0.5rem;
 }
+
 .access-levels {
     background-color: var(--heading-background-color2);
     padding: 2rem;
@@ -590,7 +620,7 @@ legend{
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     margin-top: .5rem;
-    margin: 0 0 0 -4rem ;
+    margin: 0 0 0 -4rem;
 }
 
 .membership-choice input[type="radio"] {
@@ -600,7 +630,7 @@ legend{
 .membership-choice label {
     display: block;
     padding: 1rem;
-    background-color:var(--heading-background-color);
+    background-color: var(--heading-background-color);
     border: 2px solid transparent;
     border-radius: 8px;
     color: var(--text);

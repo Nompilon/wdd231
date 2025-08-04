@@ -1,25 +1,30 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("membership.json")
-        .then(response => response.json())
-        .then(data => {
-            const container = document.getElementById("membership-information");
+  fetch("data/membership.json") 
+    .then(response => {
+      if (!response.ok) throw new Error("Failed to load membership.json");
+      return response.json();
+    })
+    .then(data => {
+      const container = document.getElementById("membership-information");
+      if (!container) {
+        console.error("Membership container not found!");
+        return;
+      }
 
-            data.memberships.forEach((membership) => {
-                const card = document.createElement("div");
-                card.classList.add("card2");
+      data.memberships.forEach((membership, index) => {
+        const card = document.createElement("fieldset");
+        card.classList.add("card2");
 
-                card.innerHTML = `
-          <h3>${membership.level}</h3>
-          <p>${membership.description}</p>
-          <p><strong>${membership.price}</strong></p>
-          <label>
-            <input type="radio" name="membership" value="${membership.level}">
-            Select ${membership.level}
-          </label>
-        `;
+        card.innerHTML = `
+                    <legend>${membership.level}</legend>
+                    <p>${membership.description}</p>
+                    <p>${membership.detailedDescription}</p>
+                    <p><strong>${membership.price}</strong></p>
+                    
+                `;
 
-                container.appendChild(card);
-            });
-        })
-        .catch(error => console.error("Error loading JSON:", error));
+        container.appendChild(card);
+      });
+    })
+    .catch(error => console.error("Error loading JSON:", error));
 });

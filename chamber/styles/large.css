@@ -58,63 +58,63 @@
         align-items: center;
     }
 
-  /* LIST VIEW STYLING */
-  .list-view {
-      display: flex;
-      flex-direction: column;
-      margin: 0;
+    /* LIST VIEW STYLING */
+    .list-view {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
       
-  }
+    }
 
-  .list-view .members-cards {
+    .list-view .members-cards {
       
-      background-color: #f9f9f9;
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      text-align: start;
-      padding: 1rem;
+        background-color: #f9f9f9;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: start;
+        padding: 1rem;
          
-  }
+    }
 
-  .list-view .members-cards:nth-child(even) {
-      background-color: #f0fafa;
-  }
+    .list-view .members-cards:nth-child(even) {
+        background-color: #f0fafa;
+    }
 
-  .list-view .member-image {
-      display: none;
-  }
+    .list-view .member-image {
+        display: none;
+    }
 
-   .list-view .members-cards:nth-child(even) {
+    .list-view .members-cards:nth-child(even) {
        background-color: #f0fafa;
-   }
+    }
 
-   .list-view .info-row {
-       display: flex;
+    .list-view .info-row {
+        display: flex;
         flex-wrap: wrap;
         gap: 1rem;
         width: 100%;
         align-items: center;
         font-size: small;
-   }
+    }
 
-   /*.info-row>div {
+    /*.info-row>div {
        flex: 1 1 200px;
        white-space: nowrap;
        text-align: start;
        
-   }*/
-   .list-view .info-row>div {
+    }*/
+    .list-view .info-row>div {
        flex: 1 1 150px;
        min-width: 0;
        word-break: break-word;
-   }
-  .list-view .info-name {
+     }
+    .list-view .info-name {
       font-weight: 900;
       font-size: small;
-  }
+    }
       
- main {
+    main {
         grid-area: main;
         display: block;
         width: 100%;
@@ -184,7 +184,18 @@
  .form-page{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 100%;
     gap: 5rem;
     padding: 2rem;
+ }
+ .card2 p, .cta-link {
+  
+     font-size: 1rem;
+ }
+
+ .wf1 input[type="submit"] {
+    
+     margin: 1rem 2% 2rem 2%;
+     
  }
 }

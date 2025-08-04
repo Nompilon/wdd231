@@ -2,23 +2,27 @@
     "memberships": [
         {
             "level": "Bronze Membership",
-            "description": "Basic access with limited features.",
-            "price": "R100 / month"
+            "description": "Basic Access — ideal for individuals needing essential features and updates.",
+            "detailedDescription": "Bronze Membership offers basic access, perfect for individuals who want essential features and timely updates.",
+            "price": "R100 / month fixed 2.5 year contract"
         },
         {
             "level": "Silver Membership",
-            "description": "Standard access with additional perks.",
-            "price": "R200 / month"
+            "description": "Standard Access — enjoy more perks and helpful support features.",
+            "detailedDescription": "Enjoy standard access with added perks and helpful support to boost your business.",
+            "price": "R200 / month fixed 2 year contract"
         },
         {
             "level": "Gold Membership",
-            "description": "Premium access with priority support.",
-            "price": "R300 / month"
+            "description": "Premium Access — includes advanced tools and priority response time.",
+            "detailedDescription": "The premium access includes advanced tools, priority support, and exclusive events.",
+            "price": "R300 / month fixed 1 year contract"
         },
         {
             "level": "Platinum Membership",
-            "description": "All-inclusive access and exclusive benefits.",
-            "price": "R500 / month"
+            "description": "All-Exclusive Access — everything included, with VIP-level benefits and support.",
+            "detailedDescription": "All-inclusive package with VIP benefits, exclusive networking, and dedicated support.",
+            "price": "R500 / month fixed 6 months contract"
         }
     ]
 }

@@ -45,68 +45,85 @@
         </header>
 
         <main>
-           <article class="container-form">
-            <h1>Join the Tshwane Chamber of Commerce</h1>
-            <section class="form-page">
-                <form method="get" action="thanks.html" class="wf1">
-                    <h2>Membership Application Form</h2>
-                    <fieldset>
-                        <legend>Personal Information</legend>
-                        <label>First Name* <input type="text" name="fname" autocomplete="given-name" required></label>
-                        <label>Last Name* <input type="text" name="lname" autocomplete="family-name" required></label>
-                        <label>Phone <input type="tel" name="phone" autocomplete="tel" placeholder="1235551234"></label>
-                        <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" autocomplete="email" required></label>
-                        <label>Position <input type="text" name="position" placeholder="CEO" autocomplete="organization-title" required></label>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Business Information</legend>
-                        <label>Business Name* <input type="text" name="businessname" title="Enter the name of your business" autocomplete="organization" required></label>
-                        <label>Company Phone <input type="tel" name="businessphone" title="Enter your business contact number" autocomplete="tel"></label>
-                        <label> Company Email* <input type="email" name="businessemail"title="Enter your business email" autocomplete="email" placeholder="someone@companyname.co.za"></label>
-                        <label> Industry
-                            <select name="subject" title="Select your industry" autocomplete="off">
-                                <option value="">Please Select &#9662;</option>
-                                <option value="agriculture">Agriculture</option>
-                                <option value="automotive">Automotive</option>
-                                <option value="banking">Banking & Finance</option>
-                                <option value="construction">Construction</option>
-                                <option value="manufacturing">Manufacturing</option>
-                                <option value="mining">Mining & Resources</option>
-                                <option value="Nonprofit">Nonprofit / NGO</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </label>
-                        <label>Company rating</label>
-                        <div class="star-rating">
-                            <input type="radio" id="star5" name="rating" value="5" autocomplete="off"><label for="star5">★</label>
-                            <input type="radio" id="star4" name="rating" value="4" autocomplete="off"><label for="star4">★</label>
-                            <input type="radio" id="star3" name="rating" value="3" autocomplete="off"><label for="star3">★</label>
-                            <input type="radio" id="star2" name="rating" value="2" autocomplete="off"><label for="star2">★</label>
-                            <input type="radio" id="star1" name="rating" value="1" autocomplete="off"><label for="star1">★</label>
-                        </div>
-                    
-                        <div>Membership Level <small>(See membership details below)</small></div>
-                        <div class="membership-choice">
-                            <input type="radio" id="bronze" name="membershipLevel" value="bronze" hidden>
-                            <label for="bronze" class="membership-option">Bronze</label>
-                        
-                            <input type="radio" id="silver" name="membershipLevel" value="silver" hidden>
-                            <label for="silver" class="membership-option">Silver</label>
-                        
-                            <input type="radio" id="gold" name="membershipLevel" value="gold" hidden>
-                            <label for="gold" class="membership-option">Gold</label>
-                        
-                            <input type="radio" id="platinum" name="membershipLevel" value="platinum" hidden>
-                            <label for="platinum" class="membership-option">Platinum</label>
-                        </div>
-                    </fieldset>
-                    <input type="submit" value="Join Now">
-                </form>
-                <article class="membership-information card2">
-                    <h2>Membeship Levels Details</h2>
-                    <div id="membership-information"></div>
-                </article>
-            </section>
+            <article class="container-form">
+                <h1>Join the Tshwane Chamber of Commerce</h1>
+                <section class="form-page">
+                    <form method="get" action="thanks.html" class="wf1">
+                        <h2>Membership Application Form</h2>
+                        <fieldset>
+                            <legend>Personal Information</legend>
+                            <label>First Name* <input type="text" name="fname" autocomplete="given-name"
+                                    required></label>
+                            <label>Last Name* <input type="text" name="lname" autocomplete="family-name"
+                                    required></label>
+                            <label>Phone <input type="tel" name="phone" autocomplete="tel"
+                                    placeholder="1235551234"></label>
+                            <label>Email* <input type="email" name="email" placeholder="someone@gmail.com"
+                                    autocomplete="email" required></label>
+                            <label>Position<input type="text" name="position" placeholder="e.g. Marketing Director"
+                                    pattern="[A-Za-z\s\-]{7,}"
+                                    title="At least 7 characters. Letters, spaces, and hyphens only."
+                                    autocomplete="organization-title" required></label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Business Information</legend>
+                            <label>Business Name* <input type="text" name="businessname"
+                                    title="Enter the name of your business" autocomplete="organization"
+                                    required></label>
+                            <label>Company Phone <input type="tel" name="businessphone"
+                                    title="Enter your business contact number" autocomplete="tel"></label>
+                            <label> Company Email* <input type="email" name="businessemail"
+                                    title="Enter your business email" autocomplete="email"
+                                    placeholder="someone@companyname.co.za"></label>
+                            <label> Industry
+                                <select name="subject" title="Select your industry" autocomplete="off">
+                                    <option value="">Please Select &#9662;</option>
+                                    <option value="agriculture">Agriculture</option>
+                                    <option value="automotive">Automotive</option>
+                                    <option value="banking">Banking & Finance</option>
+                                    <option value="construction">Construction</option>
+                                    <option value="manufacturing">Manufacturing</option>
+                                    <option value="mining">Mining & Resources</option>
+                                    <option value="Nonprofit">Nonprofit / NGO</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </label>
+                            <label>Company rating</label>
+                            <div class="star-rating">
+                                <input type="radio" id="star5" name="rating" value="5" autocomplete="off"><label
+                                    for="star5">★</label>
+                                <input type="radio" id="star4" name="rating" value="4" autocomplete="off"><label
+                                    for="star4">★</label>
+                                <input type="radio" id="star3" name="rating" value="3" autocomplete="off"><label
+                                    for="star3">★</label>
+                                <input type="radio" id="star2" name="rating" value="2" autocomplete="off"><label
+                                    for="star2">★</label>
+                                <input type="radio" id="star1" name="rating" value="1" autocomplete="off"><label
+                                    for="star1">★</label>
+                            </div>
+
+                            <div>Membership Level <small>(See membership details below)</small></div>
+                            <div class="membership-choice">
+                                <input type="radio" id="bronze" name="membershipLevel" value="bronze" hidden>
+                                <label for="bronze" class="membership-option">Bronze</label>
+
+                                <input type="radio" id="silver" name="membershipLevel" value="silver" hidden>
+                                <label for="silver" class="membership-option">Silver</label>
+
+                                <input type="radio" id="gold" name="membershipLevel" value="gold" hidden>
+                                <label for="gold" class="membership-option">Gold</label>
+
+                                <input type="radio" id="platinum" name="membershipLevel" value="platinum" hidden>
+                                <label for="platinum" class="membership-option">Platinum</label>
+                            </div>
+                        </fieldset>
+                        <input type="submit" value="Join Now">
+                    </form>
+                    <article class="membership-information card2">
+                        <h2>Membeship Levels Details</h2>
+                        <div id="membership-information"></div>
+                    </article>
+                </section>
             </article>
         </main>
         <footer>

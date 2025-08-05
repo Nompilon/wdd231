@@ -22,16 +22,26 @@
 
 <body>
     <header>
-        <h1>Tshwane Chamber of Commerce</h1>
         <div class="logo">
             <div class="logo-icon"></div>
             <div><span>Tshwane Chamber of Commerce</span></div>
         </div>
+        <div>
+            <button id="menu" aria-label="menu to access the nav ins phones" class="small-screen"></button>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html" id="home" title="Home">Home</a></li>
+                    <li><a href="discover.html" id="discover" title="discover" >Discover</a></li>
+                    <li><a href="directory.html" id="directory" title="directory">Directory</a></li>
+                    <li><a href="join.html" id="join" title="join ">Join</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        
         <article class="thank-you-message">
-            <h1>Thank You for Joining!</h1>
+            <h3>Thank you for applying to join the chamber. We will get back to you within a week with a response. We cannot wait to have
+            you 🥳</h3>
             <p>Here is the information you submitted:</p>
             <dl>
                 <dt>First Name:</dt>
@@ -65,7 +75,23 @@
                 <p>tshwane@chamberofcommerce.co.za</p>
                 <p>+27 81 578 9575</p>
             </article>
-            <!-- Add social links and copyright as needed -->
+            <article class="sociallinks">
+                <nav>
+                    <a href="https://youtube.com">
+                        <img src="images/youtube.svg" alt="YouTube"></a>
+                    <a href="https://twitter.com">
+                        <img src="images/twitter.svg" alt="Twitter"></a>
+                    <a href="https://linkedin.com">
+                        <img src="images/linkedin.svg" alt="LinkedIn"></a>
+                    </nav>
+            </article>
+            <article class="copyright">
+                <p>WDD231 class Project</p>
+                <p>Nompilo Ngwenya</p>
+                <p>&copy;<span id="currentyear"></span> Tshwane Chamber of Commerce </p>
+                <p>Last modification: <span id="lastModified"></span></p>
+
+            </article>
         </div>
     </footer>
 </body>

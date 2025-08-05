@@ -56,9 +56,9 @@
                                     required></label>
                             <label>Last Name* <input type="text" name="lname" autocomplete="family-name"
                                     required></label>
-                            <label>Phone <input type="tel" name="phone" autocomplete="tel"
+                            <label>Phone <input type="text" name="phone" autocomplete="tel"
                                     placeholder="1235551234"></label>
-                            <label>Email* <input type="email" name="email" placeholder="someone@gmail.com"
+                            <label>Email* <input type="text" name="email" placeholder="someone@gmail.com"
                                     autocomplete="email" required></label>
                             <label>Position<input type="text" name="position" placeholder="e.g. Marketing Director"
                                     pattern="[A-Za-z\s\-]{7,}"
@@ -115,6 +115,12 @@
 
                                 <input type="radio" id="platinum" name="membershipLevel" value="platinum" hidden>
                                 <label for="platinum" class="membership-option">Platinum</label>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="optional">
+                                <label for="description">Company Description</label>
+                                <textarea id="description" name="company-description" class="form-control" rows="8" placeholder="Describe your organization, in brief..." length="500" title="Optional descriptionof your organization"></textarea>
                             </div>
                         </fieldset>
                         <input type="submit" value="Join Now">

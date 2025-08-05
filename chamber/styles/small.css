@@ -558,6 +558,13 @@ legend {
     color: gold;
 }
 
+#description {
+    width: 100%;
+    max-width: 400px;
+    height: 160px;
+    resize: none;
+    box-sizing: border-box;
+}
 .membership-options {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -569,7 +576,6 @@ legend {
     margin: 1rem auto;
     width: 100%;
     max-width: 1000px;
-    /* Optional limit for wide screens */
     padding: 2rem;
 }
 .card2,
@@ -582,13 +588,9 @@ form {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/*.card2 h3 {
-    color: #445ba9;
-    margin-top: 0;
-}*/
 
 .card2 p {
-    margin: .5rem 0 0 0;
+    margin: .5rem 0 00;
     padding: 1rem;
     font-size: .9rem;
 }

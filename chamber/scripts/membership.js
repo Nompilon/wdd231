@@ -2,30 +2,28 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch("data/membership.json")
     .then(response => response.json())
     .then(data => {
-      const cardsContainer = document.getElementById("card-container");
-      const modalsContainer = document.getElementById("membership-information");
+      const cardContainer = document.getElementById("membership-information");
+      const modalsContainer = document.getElementById("modals");
 
       data.memberships.forEach((membership, index) => {
         const modalId = `modal-${index}`;
 
-        // Card
+        // Create card
         const card = document.createElement("div");
-        card.className = "card";
+        card.className = `card ${membership.level.toLowerCase()}`;
         card.innerHTML = `
           <h3>${membership.level} Membership</h3>
-          <p>${membership.access}</p>
+          <p>${membership.description}</p>
           <button onclick="openModal('${modalId}')">View Benefits</button>
         `;
-        cardsContainer.appendChild(card);
+        cardContainer.appendChild(card);
 
-        // Modal
+        // Create modal
         const modal = document.createElement("dialog");
         modal.id = modalId;
         modal.innerHTML = `
           <h2>${membership.level} Membership Benefits</h2>
-          <ul>
-            ${membership.benefits.map(b => `<li>${b}</li>`).join("")}
-          </ul>
+          <ul>${membership.benefits.map(b => `<li>${b}</li>`).join('')}</ul>
           <button onclick="closeModal('${modalId}')">Close</button>
         `;
         modalsContainer.appendChild(modal);
@@ -38,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (timestampInput) {
     timestampInput.value = new Date().toISOString();
   }
+});
 
   // If thank you page, display submitted info
   if (document.getElementById("formDate")) {
@@ -50,13 +49,13 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("businessName").textContent = params.businessname || "";
     document.getElementById("formDate").textContent = formatDate(params.formLoadTimestamp);
   }
-});
+
 
 // Modal handlers
 function openModal(id) {
   const modal = document.getElementById(id);
   if (modal?.showModal) modal.showModal();
-  else modal.style.display = "block"; // fallback for <div>-based modals
+  else modal.style.display = "block"; 
 }
 
 function closeModal(id) {

@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
       data.memberships.forEach((membership, index) => {
         const modalId = `modal-${index}`;
 
-        // Create the membership card
+        // Card
         const card = document.createElement("div");
         card.className = "card";
         card.innerHTML = `
@@ -18,68 +18,78 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
         cardsContainer.appendChild(card);
 
-        // Create the modal
-        const modal = document.createElement("div");
-        modal.className = "modal";
+        // Modal
+        const modal = document.createElement("dialog");
         modal.id = modalId;
         modal.innerHTML = `
-          <div class="modal-content">
-            <span class="close" onclick="closeModal('${modalId}')">&times;</span>
-            <h2>${membership.level} Membership Benefits</h2>
-            <ul>
-              ${membership.benefits.map(b => `<li>${b}</li>`).join("")}
-            </ul>
-          </div>
+          <h2>${membership.level} Membership Benefits</h2>
+          <ul>
+            ${membership.benefits.map(b => `<li>${b}</li>`).join("")}
+          </ul>
+          <button onclick="closeModal('${modalId}')">Close</button>
         `;
         modalsContainer.appendChild(modal);
       });
     })
     .catch(err => console.error("Error loading membership data:", err));
+
+  // Set form load timestamp
+  const timestampInput = document.getElementById("formLoadTimestamp");
+  if (timestampInput) {
+    timestampInput.value = new Date().toISOString();
+  }
+
+  // If thank you page, display submitted info
+  if (document.getElementById("formDate")) {
+    const params = getQueryParams();
+
+    document.getElementById("firstName").textContent = params.fname || "";
+    document.getElementById("lastName").textContent = params.lname || "";
+    document.getElementById("email").textContent = params.email || "";
+    document.getElementById("phone").textContent = params.phone || "";
+    document.getElementById("businessName").textContent = params.businessname || "";
+    document.getElementById("formDate").textContent = formatDate(params.formLoadTimestamp);
+  }
 });
 
+// Modal handlers
 function openModal(id) {
-  document.getElementById(id).style.display = 'block';
+  const modal = document.getElementById(id);
+  if (modal?.showModal) modal.showModal();
+  else modal.style.display = "block"; // fallback for <div>-based modals
 }
 
 function closeModal(id) {
-  document.getElementById(id).style.display = 'none';
+  const modal = document.getElementById(id);
+  if (modal?.close) modal.close();
+  else modal.style.display = "none";
 }
 
-window.addEventListener("keydown", function (e) {
+window.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
-    document.querySelectorAll('.modal').forEach(modal => {
-      modal.style.display = 'none';
-    });
+    document.querySelectorAll("dialog[open]").forEach(modal => modal.close());
+    document.querySelectorAll(".modal").forEach(modal => modal.style.display = "none");
   }
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const timestampInput = document.getElementById("formLoadTimestamp");
-  if (timestampInput) {
-    // Use ISO string format for universal readability
-    timestampInput.value = new Date().toISOString();
-  }
-});
+function getQueryParams() {
+  const params = {};
+  const queryString = window.location.search.substring(1);
+  const pairs = queryString.split("&");
+
+  pairs.forEach(pair => {
+    const [key, value] = pair.split("=");
+    params[decodeURIComponent(key)] = decodeURIComponent(value || "");
+  });
+
+  return params;
+}
 
 function formatDate(isoString) {
   if (!isoString) return "";
   const date = new Date(isoString);
-  if (isNaN(date)) return isoString; // fallback to raw string
-  return date.toLocaleString(undefined, {
+  return isNaN(date) ? isoString : date.toLocaleString(undefined, {
     dateStyle: "medium",
-    timeStyle: "short",
+    timeStyle: "short"
   });
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  const params = getQueryParams();
-
-  document.getElementById("firstName").textContent = params.fname || "";
-  document.getElementById("lastName").textContent = params.lname || "";
-  document.getElementById("email").textContent = params.email || "";
-  document.getElementById("phone").textContent = params.phone || "";
-  document.getElementById("businessName").textContent = params.businessname || "";
-
-  // Format and display the hidden timestamp field
-  document.getElementById("formDate").textContent = formatDate(params.formLoadTimestamp);
-});

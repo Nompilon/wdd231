@@ -1,0 +1,23 @@
+@media (min-width: 470px) {
+    header {
+        grid-template-columns: auto 1fr auto;
+        padding: 1rem;
+    }
+
+    header span {
+        font-size: 1.5rem;
+    }
+
+    .logo-icon::before {
+        width: 70px;
+        height: 70px;
+    }
+
+    .membership-choice {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .star-rating {
+        font-size: 2.5rem;
+    }
+}

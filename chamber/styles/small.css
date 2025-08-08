@@ -421,10 +421,10 @@ h3 {
 .cta-link {
     position: absolute;
     bottom: 10%;
-    left: 75%;
+    left: 70%;
     background-color: var(--text);
     color: var(--text2);
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem .5rem;
     border-radius: 25px;
     text-decoration: none;
     font-weight: bold;
@@ -628,7 +628,6 @@ form {
     width: 100%;
     max-width: 1000px;
 
-    min-width: 30em;
 
     margin: 1rem auto;
     padding: 2rem 2rem 0 2rem;

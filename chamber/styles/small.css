@@ -442,6 +442,7 @@ h3 {
 .form-page {
     display: grid;
     grid-template-columns: 1fr;
+    align-items: start;
 }
 
 .wf1 fieldset {

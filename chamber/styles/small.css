@@ -582,7 +582,7 @@ form {
 .membership-choice label{
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 1rem;
+    margin: 1rem 0 0 -2rem;
     padding: .5rem 0;
     width: 100%;
     background-color: var(--heading-background-color);

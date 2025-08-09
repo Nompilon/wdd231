@@ -706,7 +706,9 @@ form {
     margin: 0;
     color: #444;
 }
-
+.area {
+    padding: 1rem;
+}
 #card1 {
     grid-area: card1;
 }
@@ -743,14 +745,18 @@ form {
 #site-cards article {
     border: 1px solid #ccc;
     border-radius: 8px;
-    padding: 1rem;
-    background-color: #fafafa;
+    padding: .5rem;
+    background-color: var(--text);
 }
 
 #site-cards figure img {
     max-width: 100%;
     height: auto;
     border-radius: 6px;
+}
+#site-cards address {
+    color: var(--heading-background-color);
+    font-size: .8rem;
 }
 #site-cards {
     display: grid;

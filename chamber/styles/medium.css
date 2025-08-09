@@ -28,14 +28,13 @@
             "card5 card6"
             "card7 card8";
     }
-    #site-cards img {
-        filter: grayscale(100%);
-        cursor: pointer;
-    }
-    
-    #site-cards img:hover {
-        filter: grayscale(0%);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-            
-    }
+  #site-plan img {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+  }
+
+  #site-cards img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
 }

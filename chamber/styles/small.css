@@ -439,11 +439,10 @@ h3 {
     transform: scale(1.05);
 }
 
-/*.form-page,
-.card2 {
+.form-page {
     display: grid;
     grid-template-columns: 1fr;
-}*/
+}
 
 .wf1 fieldset {
     margin: 1rem 0;

@@ -563,6 +563,7 @@ legend {
     height: 160px;
     resize: none;
     box-sizing: border-box;
+    margin-inline-start:-2rem;
 }
 
 form {
@@ -578,19 +579,12 @@ form {
 }
 
 
-.membership-choice {
+.membership-choice label{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.5rem;
-    margin: 0;
-}
-.membership-choice input[type="radio"] {
-    display: none;
-}
-
-.membership-choice label {
-    display: block;
-    padding: 1rem;
+    grid-template-columns: 1fr;
+    margin-top: 1rem;
+    padding: .5rem 0;
+    width: 100%;
     background-color: var(--heading-background-color);
     border: 2px solid transparent;
     border-radius: 8px;
@@ -600,6 +594,10 @@ form {
     transition: all 0.3s ease;
     font-weight: bold;
 }
+.membership-choice input[type="radio"] {
+    display: none;
+}
+
 
 .membership-cards {
     width: 100%;

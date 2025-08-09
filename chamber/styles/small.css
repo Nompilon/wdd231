@@ -161,9 +161,9 @@ button:hover {
     margin: 0;
 }
 
-article h1 {
-    margin: 1rem;
-    font-size: 2rem;
+h1 {
+    margin: 1rem 2rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 

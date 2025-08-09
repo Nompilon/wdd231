@@ -495,7 +495,7 @@ legend {
     border-radius: 6px;
     color: #686565;
     width: 100%;
-    max-width: 400px;
+    /*max-width: 400px;*/
     appearance: none;
     /*to override the browser default settings*/
 }
@@ -577,7 +577,7 @@ legend {
     max-width: 1000px;
     padding: 2rem;
 }*/
-.card,
+
 form {
     border: 1px solid var(--heading-background-color);
     border-radius: 8px;
@@ -585,6 +585,9 @@ form {
     margin: 1rem 0;
     background-color: var(--text2);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-width: unset;
+    width: 100%;
+    max-width: 1000px;
 }
 
 

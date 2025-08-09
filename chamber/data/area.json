@@ -1,0 +1,52 @@
+{
+    "sites": [
+        {
+            "siteName": "Hartbeespoort dam",
+            "address": "Schoemansville, Hartbeespoort, 0216, Pretoria, South Africa",
+            "imageUrl": "images/hartbeespoort-dam-wall.webp",
+            "description": "Hartbeespoort Dam is a popular tourist destination and water recreation area situated in the North West Province of South Africa, near the towns of Hartbeespoort and Brits. It's known for its scenic beauty, nestled in the Magaliesberg mountains, and offers a wide range of activities including water sports, hiking, and wildlife encounters. "
+        },
+        {
+            "siteName": "Dinokeng Game Reserve",
+            "address": "N1 North, Hammanskraal, 0400, Pretoria, South Africa",
+            "imageUrl": "images/dinokeng-game-reserve.webp",
+            "description": "The Dinokeng Game Reserve is a wildlife sanctuary in the province of Gauteng, South Africa and can be accessed via the N1 route. It is a 40-minute drive from Pretoria or 75 minutes from the O. R. Tambo Airport and Johannesburg. The reserve has the Big Five game animals, and is open for visitors to explore. "
+        },
+        {
+            "siteName": "Hartbeespoort Windmill Market",
+            "address": "1 Jan Smuts Meerhof, Ifafi, Hartbeespoort, 0260, Pretoria, South Africa",
+            "imageUrl": "images/hartbeespoort-windmill.webp",
+            "description": "Jasmyn Flea market in front of Jasmyn - Jasmyn is open every single day except Christmas Day. Jasmyn Arts, Crafts and Antiques Flea market is open every Friday, Saturday and Sunday and Public Holidays, we are not Jasmyn but the flea market "
+        },
+        {
+            "siteName": "Hennops Hiking Trail & Mtb Trail",
+            "address": "R511, Pretoria, 0001, South Africa",
+            "imageUrl": "images/hennops-hiking-trail-and-mtb.webp",
+            "description": "The Hennops Hiking and MTB Trail, located near Pretoria and Johannesburg, offers a variety of trails for both hiking and mountain biking. The hiking trails include the Krokodilberg, Zebra, and Dassie trails, ranging from 2.5km to 10km in length and varying in difficulty. The MTB trail is a 40km single-track experience with sections like the Dragon and Snake, known for their climbs and descents, and is considered one of the best single-track trails within 40km of Johannesburg. "
+        },
+        {
+            "siteName": "Lion & Safari Park",
+            "address": "R512 Pelindaba Rd, Broederstroom, 0240, Pretoria, South Africa",
+            "imageUrl": "images/lion-and-safari-park.webp",
+            "description": "Lion & Safari Park is a conservation enclosure for lions, cheetahs, hyena, wild dogs and various antelope. It is located in the Cradle of Humankind in the North West province of South Africa."
+        },
+        {
+            "siteName": "Union Buildings",
+            "address": "628 Stanza Bopape St, Pretoria, Pretoria, South Africa",
+            "imageUrl": "images/union-buildings.webp",
+            "description": "he Union Buildings, located in Pretoria, South Africa, are the official seat of the South African government and also house the offices of the President. Designed by Sir Herbert Baker, the buildings are known for their distinctive sandstone structure, semi-circular design, and sprawling gardens. They are a significant South African landmark, representing the country's history and its transition to democracy. "
+        },
+        {
+            "siteName": "Tshwane Market",
+            "address": " 450 President Burgers St, Pretoria, South Africa",
+            "imageUrl": "images/pretoria-market-place.webp",
+            "description": "The Tshwane Market is a unique centre where prices are formed and fresh produce is traded to the mutual benefit of suppliers, buyers and consumers."
+        },
+        {
+            "siteName": "Voortrekker Monument",
+            "address": "Eeufees Rd, Groenkloof 358-Jr, Pretoria, 0027, South Africa",
+            "imageUrl": "images/voortrekker-monument.webp",
+            "description": "The Voortrekker Monument, located in Pretoria, is a granite structure dedicated to the Voortrekkers, who left the Cape Colony between 1835 and 1854 during the Great Trek. It's a significant landmark in South Africa, commemorating their journey and sacrifices. Designed by Gerard Moerdijk, the monument was inaugurated on December 16, 1949."
+        }
+    ]
+}

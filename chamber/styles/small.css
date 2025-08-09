@@ -564,19 +564,6 @@ legend {
     resize: none;
     box-sizing: border-box;
 }
-.membership-options {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-.card2 {
-    margin: 1rem auto;
-    width: 100%;
-    max-width: 1000px;
-    padding: 2rem;
-}
 
 form {
     border: 1px solid var(--heading-background-color);
@@ -590,17 +577,6 @@ form {
     max-width: 1000px;
 }
 
-
-.card2 p {
-    margin: .5rem 0 00;
-    padding: 1rem;
-    font-size: .9rem;
-}
-
-
-.card2 input[type="radio"] {
-    margin-right: 0.5rem;
-}
 
 .membership-choice {
     display: grid;

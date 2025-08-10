@@ -1,0 +1,111 @@
+.container {
+    object-fit: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+:root {
+    --text1: rgb(19, 66, 66);
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    padding: 0.5rem 0;
+    grid-area: header;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: rgb(19, 66, 66);
+    color: rgb(255, 242, 232);
+    font-weight: 900;
+    width: 100%;
+    gap: 20px;
+
+}
+
+header p {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 0 2rem;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-self: start;
+    padding: 0;
+    margin: 2rem;
+}
+
+.logo-topic {
+    display: flex;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: rgb(255, 242, 232);
+
+
+}
+
+.navigation li {
+    list-style: none;
+
+
+}
+
+main {
+    grid-area: main;
+    width: 100%;
+    margin: 0;
+}
+
+section {
+    background-color: rgb(248, 236, 228);
+    border: solid rgb(19,66, 66);
+    text-align: center;
+}
+
+.wireframes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15rem;
+    margin: 0 6rem;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+h2 {
+    background-color: rgb(176, 202, 202);
+    text-align: center;
+    margin: 0;
+    font-weight: 600;
+}
+
+footer {
+    grid-area: footer;
+    width: 100%;
+    background-color: rgb(19,66,66);
+    color: white;
+    height: 6rem;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+}

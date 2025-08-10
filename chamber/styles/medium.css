@@ -28,6 +28,10 @@
             "card5 card6"
             "card7 card8";
     }
+    #site-cards h2 {
+        font-size: .9rem;
+        padding: .5rem 0;
+    }
   #site-plan img {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;

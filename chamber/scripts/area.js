@@ -12,7 +12,7 @@ fetch('data/area.json')
             card.classList.add('site-card');  // <-- added class here
             card.innerHTML = `
         <h2>${site.siteName}</h2>
-        <figure><img src="${site.imageUrl}" alt="${site.siteName}"></figure>
+        <figure><img src="${site.imageUrl}" alt="${site.siteName}" loading="lazy"></figure>
         <address>${site.address}</address>
         <p>${site.description}</p>
         <button type="button">Learn More</button>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD231-Web Fronted Development-Ngwenya Nompilo - Living Long Cooking Club project">
+    <meta name="author" content="Nompilo Ngwenya">
+    <title>Living Long Cooking Club |Recipes</title>
+    <meta property="og:title" content="Living Long Cooking Club - Recipes">
+    <meta property="og:description" content="Recipes Living Long Cooking Club - Nompilo Ngwenya">
+    <meta property="og:url" content="https://nompilon.github.io/wdd231/project/recipes.html">
+    <meta property="og:image" content="https://nompilon.github.io/wdd231/project/images/hero-medium.webp">
+    <link rel="stylesheet" href="styles/small-view.css">
+    <link rel="stylesheet" href="styles/large-view.css">
+    <link rel="preconnect" href="https://fonts-view.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/recipes.js" defer></script>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <div><span>Living Long Cooking Club</span></div>
+            </div>
+            <div>
+                <button id="menu" aria-label="menu to access the nav ins phones" class="small-screen"></button>
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="index.html" id="home" title="Home">Home</a></li>
+                        <li><a href="recipes.html" id="recipes" title="recipea" class="active">Recipes</a></li>
+                        <li><a href="blog.html" id="blog" title="blog" >Blog</a></li>
+                        <li><a href="join.html" id="join" title="join ">Join</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <article>
+                <div class="toggle-view">
+                    <button id="gridViewBtn">Grid View</button>
+                    <button id="listViewBtn">List View</button>
+                </div>
+                <section id="recipes-cards" class="grid-view">
+                </section>
+            </article>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <article class="contact">
+                    <p class="title">Living Long Club</p>
+                    <p>257 Kandelaar Avenue</p>
+                    <p>La Montagne, Pretoria</p>
+                    <p>South Africa, 0184</p>
+                    <p>info@livinglongclub.co.za</p>
+                    <p>+27 81 578 9575</p>
+                </article>
+                <article class="sociallinks">
+                    <nav>
+                        <a href="https://youtube.com">
+                            <img src="images/youtube.svg" alt="YouTube">
+                        </a>
+                        <a href="https://instagram.com">
+                            <img src="images/instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="https://facebook.com">
+                            <img src="images/facebook.svg" alt="facebook">
+                        </a>
+                        <a href="https://tiktok.com">
+                            <img src="images/tiktok.svg" alt="facebook">
+                        </a>
+                    </nav>
+                </article>
+                <article class="copyright">
+                    <p>WDD231 Final Project</p>
+                    <p>Nompilo Ngwenya</p>
+                    <p>&copy;<span id="currentyear"></span> Living Long Cooking Club</p>
+                    <p>Last modification: <span id="lastModified"></span></p>
+                </article>
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>

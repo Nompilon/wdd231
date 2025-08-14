@@ -1,0 +1,47 @@
+@media (min-width: 471px) and (max-width: 1024px) {
+    header {
+        grid-template-columns: auto 1fr auto;
+        padding: 1rem;
+    }
+
+    header span {
+        font-size: 1.5rem;
+    }
+
+    .logo-icon::before {
+        width: 70px;
+        height: 70px;
+    }
+
+    .membership-choice {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .star-rating {
+        font-size: 2.5rem;
+    }
+
+    #site-cards {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+
+    #site-cards h2 {
+        font-size: .9rem;
+        padding: .5rem 0;
+    }
+
+    #site-plan img {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+    }
+
+    #site-cards img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+}

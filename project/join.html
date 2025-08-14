@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD231-Web Fronted Development-Ngwenya Nompilo - Living Long Cooking Club project">
+    <meta name="author" content="Nompilo Ngwenya">
+    <title>Living Long Cooking Club | Join Us Page</title>
+    <meta property="og:title" content="Living Long Cooking Club - Join us page">
+    <meta property="og:description" content="Join Us Living Long Cooking Club Project - Nompilo Ngwenya">
+    <meta property="og:url" content="https://nompilon.github.io/wdd231/project/join.html">
+    <meta property="og:image" content="https://nompilon.github.io/wdd231/project/images/hero-medium.webp">
+    <link rel="stylesheet" href="styles/small-view.css">
+    <link rel="stylesheet" href="styles/medium-view.css" media="screen and (min-width: 470px)">
+    <link rel="stylesheet" href="styles/large-view.css" media="screen and (min-width: 1024px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+    <script src="scripts/membership.js" defer></script>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <div><span>Living Long Cooking Club</span></div>
+            </div>
+            <div>
+                <button id="menu" aria-label="menu to access the nav ins phones" class="small-screen"></button>
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="index.html" id="home" title="Home">Home</a></li>
+                        <li><a href="Recipes.html" id="recipes" title="recipes">Recipes</a></li>
+                        <li><a href="blog.html" id="blog" title="blog">Blog</a></li>
+                        <li><a href="join.html" id="join" title="join" class="active">Join</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <article class="container-form">
+                <h1>Join The Living Long Cooking Club</h1>
+                <section class="form-page">
+                    <form method="get" action="thanks.html" class="wf1">
+                        <h2>Membership Application Form</h2>
+                        <fieldset>
+                            <legend>Personal Information</legend>
+                            <label>First Name* <input type="text" name="fname" autocomplete="given-name"
+                                    required></label>
+                            <label>Last Name* <input type="text" name="lname" autocomplete="family-name"
+                                    required></label>
+                            <label>Phone <input type="text" name="phone" autocomplete="tel"
+                                    placeholder="1235551234"></label>
+                            <label>Email* <input type="text" name="email" placeholder="someone@gmail.com"
+                                    autocomplete="email" required></label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Cooking Preferences</legend>
+                            <label>Favorite Cuisine
+                                <input type="text" name="favoriteCuisine" placeholder="e.g. Italian, African, Asian">
+                            </label>
+                            <label>Cooking Skill Level
+                                <select name="skillLevel">
+                                    <option value="">Select level</option>
+                                    <option value="beginner">Beginner</option>
+                                    <option value="intermediate">Intermediate</option>
+                                    <option value="advanced">Advanced</option>
+                                </select>
+                            </label>
+                            <label>Food Allergies
+                                <textarea name="allergies" placeholder="e.g. Gluten-free, Nut allergy"></textarea>
+                            </label>
+                            <div>Membership Level <small>(See membership details below)</small></div>
+                            <div class="membership-choice"> <input type="radio" id="bronze" name="membershipLevel" value="bronze" hidden> <label
+                                    for="bronze" class="membership-option">Bronze</label> <input type="radio" id="silver" name="membershipLevel"
+                                    value="silver" hidden> <label for="silver" class="membership-option">Silver</label> <input type="radio"
+                                    id="gold" name="membershipLevel" value="gold" hidden> <label for="gold" class="membership-option">Gold</label>
+                                <input type="radio" id="platinum" name="membershipLevel" value="platinum" hidden> <label for="platinum"
+                                    class="membership-option">Platinum</label> </div>
+                            </fieldset>
+                                          
+                        <fieldset>
+                            <div class="optional">
+                                <label for="description">Brief description of yourself</label>
+                                <textarea id="description" name="company-description" class="form-control" rows="8"
+                                    placeholder="Describe yourself 😊..."
+                                    title="Optional descriptionof your organization"></textarea>
+                            </div>
+                        </fieldset>
+                        <input type="submit" value="Join Us Now">
+                        <input type="hidden" id="formLoadTimestamp" name="formLoadTimestamp" value="">
+                    </form>
+                    <article class="membership-cards card2" id="card-container">
+                        <h2>Membership Levels Details</h2>
+                        <div id="membership-information"></div>
+                    </article>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <article class="contact">
+                    <p class="title">Living Long Club</p>
+                    <p>257 Kandelaar Avenue</p>
+                    <p>La Montagne, Pretoria</p>
+                    <p>South Africa, 0184</p>
+                    <p>info@livinglongclub.co.za</p>
+                    <p>+27 81 578 9575</p>
+                </article>
+                <article class="sociallinks">
+                    <nav>
+                        <a href="https://youtube.com">
+                            <img src="images/youtube.svg" alt="YouTube">
+                        </a>
+                        <a href="https://instagram.com">
+                            <img src="images/instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="https://facebook.com">
+                            <img src="images/facebook.svg" alt="facebook">
+                        </a>
+                        <a href="https://tiktok.com">
+                            <img src="images/tiktok.svg" alt="facebook">
+                        </a>
+                    </nav>
+                </article>
+                <article class="copyright">
+                    <p>WDD231 Final Project</p>
+                    <p>Nompilo Ngwenya</p>
+                    <p>&copy;<span id="currentyear"></span> Living Long Cooking Club</p>
+                    <p>Last modification: <span id="lastModified"></span></p>
+                </article>
+            </div>
+        </footer>
+        <div id="modals"></div>
+    </div>
+</body>
+
+</html>

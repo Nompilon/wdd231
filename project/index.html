@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD231-Web Fronted Development-Ngwenya Nompilo - Living Long Cooking Club personal project">
+    <meta name="author" content="Nompilo Ngwenya">
+    <title>Living Long Cooking Club | Home Page</title>
+    <meta property="og:title" content="Living Long Cooking Club - Home page">
+    <meta property="og:description" content="Home page for the Living Long Cooking Club Project - Nompilo Ngwenya">
+    <meta property="og:url" content="https://nompilon.github.io/wdd231/project/index">
+    <meta property="og:image" content="https://nompilon.github.io/wdd231/project/images/hero-medium.webp">
+    <link rel="stylesheet" href="styles/small-view.css">
+    <link rel="stylesheet" href="styles/medium-view.css">
+    <link rel="stylesheet" href="styles/large-view.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script type="module" src="scripts/recipes.js" defer></script>
+    <script type="module" src="scripts/events.js" defer></script>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <div><span>Living Long Cooking Club</span></div>
+            </div>
+            <div>
+                <button id="menu" aria-label="menu to access the nav ins phones" class="small-screen"></button>
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="index.html" id="home" title="Home" class="active">Home</a></li>
+                        <li><a href="recipes.html" id="recipes" title="recipes">Recipes</a></li>
+                        <li><a href="blog.html" id="blog" title="blog">Blog</a></li>
+                        <li><a href="join.html" id="join" title="join">Join</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <article class="hero">
+                <article class="banner">
+                    <picture>
+                        <source srcset="images/hero-large.webp" media="(min-width: 1500px)">
+                        <source srcset="images/hero-medium.webp" media="(min-width: 1000px)">
+                        <img src="images/hero-small.webp" alt="Tshwane Chamber of Commerce hero banner" width="500"
+                            height="250">
+                    </picture>
+                    <a href="join.html" class="cta-link">Join the Club</a>
+                </article>
+            </article>
+            <h1>Home</h1>
+            <section class="home-main">
+                <div class="updates">
+                    <article class="card1">
+                        <h2>🥦 Health Tip of the Week</h2>
+                        <p>Include more greens in your meals! Leafy vegetables like spinach and kale boost immunity and improve digestion.</p>
+                        <p>Check our <a href="blog.html" class="join-link">latest blog post</a> for healthy recipes.</p>
+                    </article>
+                    <div class="spotlights-wrapper">
+                        <h2 class="spotlight-heading">Food In Season</h2>
+                        <div id="spotlights-cards"></div>
+                    </div>
+                </div>
+                <article class="card1">
+                    <h2>Upcoming Events</h2>
+                    <div class="events">
+                        <div id="events-cards">
+                        </div>
+                    </div>
+                </article>
+                
+            </section>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <article class="contact">
+                    <p class="title">Living Long Club</p>
+                    <p>257 Kandelaar Avenue</p>
+                    <p>La Montagne, Pretoria</p>
+                    <p>South Africa, 0184</p>
+                    <p>info@livinglongclub.co.za</p>
+                    <p>+27 81 578 9575</p>
+                </article>
+                <article class="sociallinks">
+                    <nav>
+                        <a href="https://youtube.com">
+                            <img src="images/youtube.svg" alt="YouTube">
+                        </a>
+                        <a href="https://instagram.com">
+                            <img src="images/instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="https://facebook.com">
+                            <img src="images/facebook.svg" alt="facebook">
+                        </a>
+                        <a href="https://tiktok.com">
+                            <img src="images/tiktok.svg" alt="facebook">
+                        </a>
+                    </nav>
+                </article>
+                <article class="copyright">
+                    <p>WDD231 Final Project</p>
+                    <p>Nompilo Ngwenya</p>
+                    <p>&copy;<span id="currentyear"></span> Living Long Cooking Club</p>
+                    <p>Last modification: <span id="lastModified"></span></p>
+                </article>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
